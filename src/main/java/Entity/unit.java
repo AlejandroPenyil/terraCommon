@@ -8,15 +8,15 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "activos")
-public class Activos {
+@Table(name = "unidad")
+public class unit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Integer id;
 
-    @Column(name = "cantidad", nullable = false)
-    private Integer quantity;
+    @Column(name = "codigo", nullable = false)
+    private String cod;
 
     @Column(name = "nombre", nullable = false)
     private String name;
